@@ -1,0 +1,105 @@
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+.gold {
+    color: goldenrod;
+}
+
+ .x{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+body{
+}
+.heading2{
+    font-size: 2.5rem;
+}
+.area{
+    margin: auto;
+    margin-top: 5rem;
+    width: 100%;    
+    padding: 0;
+    overflow-x: hidden;
+}
+.achievments, .projects{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.gallery, .gallery2{
+    /* background: rgb(46, 46, 46); */
+    background: black;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1rem;
+    border-radius: 30px;
+    
+}
+
+.achievments .img, .projects .img{
+    height: 50vw;
+    width: 90vw;
+    
+}
+.img img, .img video, .img2 img, .video{
+    width: 90vw;
+    max-width: 90vw;
+}
+.img2 img{
+    border-radius: 30px;
+    display: block;
+    height: 80vh;
+}
+
+.area p{
+    font-size: 1.6rem;
+}
+ul{
+    list-style: none;
+}
+li{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Styles for larger screens (laptops and PCs) */
+@media (min-width: 768px) {
+
+
+    .achievments .img, .projects .img {
+        height: 30vw; /* Adjust height for larger screens */
+        width: 30vw; /* Adjust width for larger screens */
+    }
+
+    .img img, .img video, .img2 img {
+        width: 30vw; /* Adjust width for larger screens */
+        max-width: 30vw;
+    }
+    .img2 img{
+        display: flex;
+        height: 30vw;
+    }
+}

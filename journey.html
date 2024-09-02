@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="inverter">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Potfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+    <link href="styles2.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Happy</a>  
+        <nav>
+            <input type="checkbox" class="sidebar-active" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <!-- this will close when user click anywhere outside of navbar -->
+            <label for="sidebar-active" id="overlay"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <a href="index.html#home" > Home</a>
+                <a href="journey.html#journey" >My Journey</a>
+                <a href="index.html#skills" >Skills</a>
+                <a href="projects.html" >Projects</a>
+                <a href="index.html#contact" >Contact</a>
+            </div>
+        </nav>
+    </header>
+    <section class="journey">
+        <h2 class="heading">My <span>Journey</span></h2>
+        <div class="timeline2">
+            <div class="container">
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">The Beginning</h3>
+                        <p>Starting the journey when I entered Shoubra Faculty of Engineering and experienced the dynamic and ever-changing life of an engineering student, gaining new skills and knowledge, and making new friendships.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">Web & Failed</h3>
+                        <p>After finals at the end of May 2023, I tried to get into web development. But after HTML, I lost interest… (what a great start for a computer engineer!)</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">First Student Activity</h3>
+                        <p>As a person who liked to enjoy time by myself, being a C++ member at IEEE Shoubra branch from April to September was an amazing experience that showed what can be done with teamwork and good communication.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">Hello Python & PCB</h3>
+                        <p>We had internal training in July at the faculty. It was a 2-week training: the first week was PCB design and an intro to electronics, and the second was an introduction to Python.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">Still in Python</h3>
+                        <p>I wanted to see what was possible and try my hand at some projects, so I went a little deeper into Python, following a guide to make Ping Pong. Unfortunately, the code was lost, along with other projects I loved, due to a hard drive failure in August. (RIP my code)</p>
+                        <a href="" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">Finally… THE HOODIE</h3>
+                        <p>I'm a fan of cyberspace, especially with all the crazy, interesting, never-stopping, always-leveling madness in the cybersecurity world. I watched movies, TV series, and followed interesting people like John Hammond, Mesh Ebrahem Hegazy, and Muhammad Mattar. But I didn't actually have the determination to start until I watched Hegazy's roadmap. I got my intro certification from Cisco and Fortinet in September.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">Plus Plus Ultra</h3>
+                        <p>I tried C++… What a lovely language. From October to the end of November, I tried to understand just a tiny bit of what this language even meant, due to its difference from Python and the introduction of OOP. I did my best to build from the intro with IEEE, and with some guidance and research, I made a boring console FPS (first-person shooter). But the code was also deleted, though I have a recorded video… Yay.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">The GDSC Era</h3>
+                        <p>I liked IEEE and what was possible for me there, so I looked for something more my type. I ended up submitting for Benha & Cairo GDSC as a cybersecurity core-team member, and I was accepted into both. This marked the beginning of an amazing new experience.</p>
+                    </div>
+                </div>
+                
+                <div class="card" id="power-supply-j">
+                    <div class="info" >
+                        <h3 class="title">Closing the Year</h3>
+                        <p>At the end of December, my team and I submitted our semester project: a linear power supply that ranges from 30V to -30V. It was a challenge that leveled up our skills in design and building the project.</p>
+                        <a href="projects.html#power-supply" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card" id="gdsc-j">
+                    <div class="info" >
+                        <h3 class="title">Me Teaching Others…</h3>
+                        <p>The GDSC Benha Bootcamp is a 2-week learning camp that covers different topics like Flutter, front-end, data science, and cybersecurity. Along with my friends, I was a technical instructor, helping in the sessions after the main session led by our head, Islam, and vice-head, Karim. We revised the main sessions and helped solve exercises both offline and in online meetings. This was in February 2024.</p>
+                        <a href="projects.html#gdsc" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card" id="android-j">
+                    <div class="info" >
+                        <h3 class="title">Java the Wrong Way</h3>
+                        <p>I wanted to try making my own apps because I had a few ideas for personalized apps that seemed interesting to me. So, I jumped right into a tutorial and actually made something I liked, but I realized that I lacked some foundational knowledge in Java. So, I started learning it, as it was also the language we continued using at the faculty.</p>
+                        <a href="projects.html#android" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card" id="ctf-j">
+                    <div class="info" >
+                        <h3 class="title">First CTF</h3>
+                        <p>Capture the Flag (CTF) is a challenge to find something like a text or a file first. My friends and I from GDSC Benha participated in the Cyber Champions competition by Zinad IT, hosted by ITI in the New Administrative Capital in March 2024. It was a great experience, and my team secured the 15th place!</p>
+                        <a href="projects.html#ctf" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">Google Career Certificates</h3>
+                        <p>From late November until the end of April, I studied the Cybersecurity Certificate from Google. It was a good opportunity to refresh some basics and delve deeper into blue teaming, understanding the responsibilities of a new junior analyst.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">Best Member</h3>
+                        <p>I was awarded the best member of the month in April by GDSC Cairo.</p>
+                        <a href="" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card" id="best-j">
+                    <div class="info" >
+                        <h3 class="title">Logic & Design</h3>
+                        <p>For the second semester, along with a team, we created a project "Alarm Security System" for the digital design subject using logic gates. The second project was an amazing stereo amplifier that taught me the real meaning of patience, even if you fail a thousand times. But we made it, and we are proud of it.</p>
+                    </div>
+                </div>
+                
+                <div class="card" id="java-j">
+                    <div class="info" >
+                        <h3 class="title">More Java</h3>
+                        <p>I continued learning more about Java, delving deeper into networking and sockets, and created a chat server using sockets. I also gained some knowledge about databases and Java Database Connectivity (JDBC).</p>
+                        <a href="projects.html#java" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card" id="traffic-j">
+                    <div class="info" >
+                        <h3 class="title">2nd Internal Training</h3>
+                        <p>This was also a 2-week training in July, separated between an introduction to Networking and Embedded Systems. In the networking part, I learned the basics and created a small static-routed 3-router network. For embedded systems, I created a traffic light using a PIC microcontroller.</p>
+                        <a href="projects.html#traffic" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">IEEE & AWS</h3>
+                        <p>Although I didn't join IEEE from the beginning, I kept looking for new opportunities at the Shoubra branch. Then they announced they would help us get the AWS Fundamentals badge and provide access to labs and mentors. I completed it at the end of July.</p>
+                    </div>
+                </div>
+                
+                <div class="card" id="thm-j">
+                    <div class="info" >
+                        <h3 class="title">Back to Hack</h3>
+                        <p>I was taking a break and reviewing my thoughts and the small but inconsistent steps I was taking in the security field. So, I dedicated myself to a more consistent, linear path and gradually increased my learning speed. I spent a 32-day streak of non-stop learning on the TryHackMe platform and will continue to do so.</p>
+                        <a href="projects.html#thm" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card" id="web-j">
+                    <div class="info" >
+                        <h3 class="title">An Old Friend</h3>
+                        <p>Since I wanted to do web app penetration testing, I needed to understand how websites work as a full-stack developer (knowing both backend and frontend). I maintained the same consistent approach, which led to the creation of this site. YAY.</p>
+                        <a href="projects.html#web" class="btn q">See it</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="info" >
+                        <h3 class="title">Next Steps</h3>
+                        <p>I will keep moving in this direction for the time being. I might experiment with something new and also finish my blog, but more on that in the near future.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <Footer class="footer">
+        <div class="social inverter">
+            <a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px" baseProfile="basic"><polygon fill="#212121" points="44,30 38,27 37.13,21.652 41,21 44,26 41,24"/><path fill="#ffbca7" d="M37,27.8l3.012-0.8C41.11,27,42,27.712,42,28.59c0.103,0-0.534,6.412-5,6.41V27.8z"/><polygon fill="#212121" points="4,30 10,27 10.87,21.652 7,21 4,26 7,24"/><path fill="#ffbca7" d="M11,35c-4.466,0.002-5.103-6.41-5-6.41C6,27.712,6.89,27,7.988,27L11,27.8V35z"/><path fill="#ffdbd0" d="M24,13H10v22.377c0,3.876,5.283,8.302,14,11.623c8.805-3.354,14-7.785,14-11.623V13H24z"/><polygon fill="#212121" points="37,22 38,32 40,22"/><path fill="#ffbca7" d="M22,31h4c0,0-1,2-2,2S22,31,22,31z"/><circle cx="17" cy="28" r="4" fill="#fff"/><polygon fill="#212121" points="11,22 10,32 8,22"/><circle cx="17" cy="29" r="1" fill="#212121"/><circle cx="31" cy="28" r="4" fill="#fff"/><circle cx="31" cy="29" r="1" fill="#212121"/><path fill="#fff" d="M14,35c1.314,4.632,5.293,8,10,8s8.686-3.368,10-8H14z"/><path fill="#f5f5f5" d="M16.921,40h14.157c0.596-0.596,1.125-1.269,1.58-2H15.341C15.797,38.731,16.325,39.404,16.921,40z"/><polygon fill="#212121" points="17,20 13,27 12,23 10,32 9,20"/><polygon fill="#212121" points="35,20 38,32 38,20"/><path fill="#ffb300" d="M32.125,1h-16.25C11.526,1,8,4.526,8,8.875V19h32V8.875C40,4.526,36.474,1,32.125,1z"/><rect width="32" height="8" x="8" y="11" fill="#dd2c00"/><polygon fill="#212121" points="20,20 25,29 25,23 27,25 27,20"/><polygon fill="#ffb300" points="48,20 40.016,19 7.973,19 0,20 0,22 48,22"/></svg>
+            </a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Servicies</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+        </ul>
+        <p class="copyright">
+            @ Saeed Khalid | All Right Reserved
+        </p>
+    </Footer>
+</body>
+</html>
