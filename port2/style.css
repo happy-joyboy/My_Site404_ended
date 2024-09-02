@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  /* take border dimentions  into account */
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(backGround.jpg);
+    background-position: center;
+    background-size: cover; /* the background image will always fit the whole div */
+}
+.container .box{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    height: 100vh;
+    position: relative;
+}
+.container .box nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.container .box nav .logo{
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+.container .box nav .div-links a{
+    margin-right:20px ;
+    color: #fff;
+    font-weight: 500;
+}
+.container .box nav .div-links a:hover{
+    color: red;
+}
+.Contains{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    /* transform: translate(-50%) ; */
+}
+.Contains .section h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+.Contains .section h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0 20px;
+    color: red;
+}
+.Contains .section p{
+    font-size: 18px;
+    color: #d6d6d6;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 20px ;
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.btn:hover{
+    color: red;
+    background-color: #fff;
+
+}
+.social-link{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+}

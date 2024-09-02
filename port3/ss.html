@@ -1,0 +1,55 @@
+Creating a typing effect in CSS that can handle any word given to it dynamically is a bit more complex because CSS alone doesn't have built-in support for content manipulation. However, we can achieve a typing effect for predefined text using CSS animations and keyframes. To make it handle any given word dynamically, we'd typically combine CSS with JavaScript.
+
+Below, I'll show you two methods:
+
+    CSS-Only Method: A typing effect for predefined words.
+    CSS with JavaScript: A typing effect that dynamically handles any given word.
+
+1. CSS-Only Typing Effect for Predefined Words
+
+This method works if you know the word beforehand and can hard-code it. We will use the width property to reveal the text gradually.
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect</title>
+    <style>
+        .typing-effect {
+            font-size: 2rem;
+            font-family: 'Poppins', sans-serif;
+            white-space: nowrap; /* Prevents line break */
+            overflow: hidden; /* Hides the overflowing content */
+            border-right: 2px solid #b74b4b; /* Cursor effect */
+            width: 0; /* Start with zero width */
+            animation: typing 4s steps(30) 1s forwards, blink-caret 0.75s step-end infinite; /* Typing and cursor blinking */
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%; /* Reveal the full width of the element */
+            }
+        }
+
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #b74b4b; /* Cursor color */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="typing-effect">Hello, World!</div>
+
+</body>
+</html>
